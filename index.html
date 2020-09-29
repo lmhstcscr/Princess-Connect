@@ -19,8 +19,23 @@
 	.pic2{position: absolute;top:288px;left:20px;float:left;}
 	.pic1 img,.pic2 img,.pp3 img{width:150px;padding:0 10px;}
 </style>
+<style>
+		p{
+			font-style: italic;
+			font-weight: bold;
+			font-size: 30px;
+			font-family: "宋体";
+			color: #FF00FF;
+
+		}
+</style>
 </head>
+
+
 <body>
+	<div>
+		<p>抽取稀有奖励，获取专属密码吧！</p>
+	</div>
 	<div style="float:left">
 		<img src="img/b0.png" style="width:880px;float:left;">
 		<div class="pic1">
@@ -38,7 +53,7 @@
 			<div  class="p10"><img src="img/b2.png"/><br><span></span><i></i></div>
 		</div>
 		<div style="position: relative;float:left;top:200px;width:20%;text-align: center;">
-			<img src="img/se.jpg" style="width:50%">
+			<img src="img/511.png" style="width:50%">
 			<div><button onclick="chou()">抽抽抽</button></div>
 		</div>
 	</div>
@@ -132,12 +147,12 @@
 			if (boysp ==1) {
 				girl = 14
 				boysp = 0
-				confirm("你好像抽出了一个奇怪的角色？")
+				confirm("你好像抽出了一个奇怪的角色？但是他没有专属密码哟！")
 			}
 			if (girlsp ==1) {
 				girl = 15
 				girlsp = 0
-				confirm("你好像抽出了一个相当可爱的角色？")
+				confirm("你好像抽出了一个相当可爱的角色？呀！专属密码是000！")
 			}
 
 			var sp = 'img/star'+a+'/'+(girl+1)+'.png';

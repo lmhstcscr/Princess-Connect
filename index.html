@@ -101,7 +101,7 @@
 		{
 			var x = 1000;
 		    var y = 0;
-		    var q = parseInt(Math.random() * (x - y + 1));
+		    var q = Math.floor(Math.random() * (x - y + 1)+y);
 		    var a = 1;
 		    var ap = a1;
 			var boysp = 0;
@@ -145,7 +145,7 @@
 		    }
 		    
 			var l = ap.length;
-			var girl = parseInt(Math.random()*(l-1));
+			var girl = Math.floor(Math.random()*(l-1));
 			if (boysp ==1) {
 				girl = 14
 				boysp = 0
